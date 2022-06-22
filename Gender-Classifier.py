@@ -34,7 +34,6 @@ dataSet()
 
 # Custom Dataset class was made to convert the 3d array into tensors after resizing each picture into 100 x 100 pixels
 
-# In[257]:
 
 
 class MaleAndFemaleDataSet(Dataset):
@@ -57,7 +56,6 @@ trainingData = MaleAndFemaleDataSet(X_train,Y_trainLabel)
 
 # Implemented the Network Architecture With Forward Propagation
 
-# In[258]:
 
 
 class ConvNetwork(nn.Module):
@@ -100,7 +98,6 @@ class ConvNetwork(nn.Module):
 
 # Tells us how many predicted values were correct
 
-# In[259]:
 
 
 def numberofCorrect(preds,labels):
@@ -109,7 +106,6 @@ def numberofCorrect(preds,labels):
 
 # The neural network being trained
 
-# In[260]:
 
 
 network = ConvNetwork() # instance of the neural network
